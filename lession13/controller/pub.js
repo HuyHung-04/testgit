@@ -1,3 +1,0 @@
-window.pubControler = function(){
-    
-}
