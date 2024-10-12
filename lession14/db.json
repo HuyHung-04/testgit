@@ -1,0 +1,57 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Trần Văn A",
+      "mark": 7,
+      "gender": "women",
+      "class": "abcd"
+    },
+    {
+      "id": "2",
+      "name": "Nguyễn Thị A",
+      "mark": 9,
+      "gender": "women",
+      "class": "efgh"
+    },
+    {
+      "id": "9948",
+      "gender": "women",
+      "class": "xyzm",
+      "name": "Huy",
+      "mark": 4
+    }
+  ],
+  "genders": [
+    {
+      "id": "men",
+      "text": "Nam"
+    },
+    {
+      "id": "women",
+      "text": "Nữ"
+    },
+    {
+      "id": "other",
+      "text": "Khác"
+    }
+  ],
+  "classes": [
+    {
+      "id": "abcd",
+      "name": "SD19201"
+    },
+    {
+      "id": "efgh",
+      "name": "SD19202"
+    },
+    {
+      "id": "xyzm",
+      "name": "SD19203"
+    },
+    {
+      "id": "khmn",
+      "name": "SD19204"
+    }
+  ]
+}

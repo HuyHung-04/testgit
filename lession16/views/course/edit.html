@@ -1,0 +1,28 @@
+<div class="container">
+    <h1>Sua Course</h1>
+    <form name="frm" novalidate ng-submit="onEdit()">
+        <div class="mb-3">
+          <label for="cousreName" class="form-label">Ten</label>
+          <input type="text" class="form-control" id="cousreName" name="cousreName" required ng-model="dataInput.cousreName" minlength="5">
+          <span class="text-danger" ng-show="(frm.cousreName.$error.required && frm.cousreName.$touched) || (frm.cousreName.$error.required && frm.$submitted)">
+            Ten khong duoc de trong
+          </span>
+          <span class="text-danger" ng-show="frm.cousreName.$error.minlength">
+            Toi thieu 5 ki tu
+          </span>
+        </div>
+
+        <div class="mb-3">
+            <label for="views" class="form-label">So luong xem</label>
+            <input type="number" class="form-control" id="views" name="views" required ng-model="dataInput.views" placeholder="0">
+          </div>
+
+          <div class="mb-3">
+            <label for="category" class="form-label">Danh muc</label>
+            <select class="form-select" id="category" name="category" ng-model="dataInput.category">
+                <option ng-repeat="cg in listcategories" value="{{cg.id}}">{{cg.titleCategory}}</option>
+              </select>
+          </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>

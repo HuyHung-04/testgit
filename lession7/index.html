@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body ng-app="myApp" class="container">
+    <div ng-controller="myController">
+        <!-- Bài 1 -->
+        <input type="number" ng-model="txtA">
+        <input type="number" ng-model="txtB">
+        <button class="btn btn-primary" ng-click="tong()">Tổng</button>
+        <button class="btn btn-primary" ng-click="tich()">Tích</button>
+        <h2>{{tong1}}</h2>
+        <h2>{{tich1}}</h2>   
+        <hr>
+        <!-- Bài 2 -->
+        <input type="number" ng-model="txtXeploai">
+        <button class="btn btn-primary" ng-click="xepLoai()">Xếp Loại</button>
+        <h2>{{show}}</h2>
+        <!-- function -->
+        <input type="text" ng-model="txtName">
+        <button class="btn btn-primary" ng-click="showMessage()">Show</button>
+        <h1>{{mess}}</h1>
+        <!-- Sự kiện -->
+        <h1>{{count}}</h1>
+        <button ng-click="count = count + 1" class="btn btn-success">Tăng</button>
+        <button ng-click="count = count - 1" class="btn btn-danger">Giảm</button>
+        <button ng-click="count = 0"class="btn btn-warning">Load</button><br><br>
+        <!-- tow way binding -->
+        <input type="text" ng-model="txtText">
+        <h1>Cách 1: {{txtText}}</h1>
+        <h1 ng-bind="txtText"></h1>
+        <!-- Hiển thị -->
+        <h1>{{helloword}}</h1>
+        <h1>{{num}}</h1>
+        <h1>{{info.name}}</h1>
+        <h1>{{info.age}}</h1>
+        <ul>
+            <li>{{arr[0]}}</li>
+            <li>{{arr[1]}}</li>
+            <li>{{arr[2]}}</li>
+        </ul>
+        <table class="table table-bordered border-primary">
+            <thead>
+              <tr>
+                <th scope="col">STT</th>
+                <th scope="col">Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">Khoa</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">{{data[0].stt}}</th>
+                <td>{{data[0].name}}</td>
+                <td>{{data[0].age}}</td>
+                <td>{{data[0].khoa}}</td>
+              </tr>
+              <tr>
+                <th scope="row">{{data[1].stt}}</th>
+                <td>{{data[1].name}}</td>
+                <td>{{data[1].age}}</td>
+                <td>{{data[1].khoa}}</td>
+              </tr>
+              <tr>
+                <th scope="row">{{data[2].stt}}</th>
+                <td>{{data[2].name}}</td>
+                <td>{{data[2].age}}</td>
+                <td>{{data[2].khoa}}</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="./main.js"></script>
+</html>

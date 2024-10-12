@@ -1,0 +1,29 @@
+<div class="container">
+    <h1>Bang Course</h1>
+    <table class="table table-bordered border-primary">
+        <thead>
+          <tr>
+            <th scope="col">STT</th>
+            <th scope="col">Ten</th>
+            <th scope="col">So luong xem</th>
+            <th scope="col">Danh muc</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="(index,item) in listcousres">
+            <th scope="row">{{index + 1}}</th>
+            <td>{{item.cousreName}}</td>
+            <td>{{item.views}}</td>
+            <td>
+                <span ng-repeat="cg in listcategories" ng-if="item.category == cg.id">
+                    {{cg.titleCategory}}
+                </span>
+            </td>
+            <td><a href="#!/course/edit/{{item.id}}" class="btn btn-warning">Sua</a>
+                <button class="btn btn-danger" ng-click="onDelete(item.id)">Xoa</button></td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="#!/course/add" class="btn btn-primary">Them</a>
+</div>

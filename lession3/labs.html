@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>labs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#danhsach"
+                    type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                    Danh Sách
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#themmoi"
+                    type="button" role="tab" aria-controls="profile-tab" aria-selected="false">
+                    Thêm Mới
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="danhsach" role="tabpanel" aria-labelledby="home-tab"
+                tabindex="0">
+                <div class="list-group">
+                    <li class="list-group-item list-group-item-danger disable">Danh sách điểm sinh viên</li>
+                    <table class="table table-bordered table-striped table-hover">
+                        <thead>
+                          <tr class="table-primary">
+                            <th class="text-center align-middle" scope="col" rowspan="2">STT</th>
+                            <th class="text-center align-middle" scope="col" rowspan="2">Họ và Tên</th>
+                            <th class="text-center align-middle" scope="col" rowspan="2">Khoa</th>
+                            <th class="text-center align-middle" scope="col" rowspan="2">Giới Tính</th>
+                            <th class="text-center" scope="col" colspan="2">Điểm</th>
+                            <th rowspan="2"></th>
+                          </tr>
+                          <tr class="table-primary">
+                            <th class="text-center" scope="col">ASM GD1</th>
+                            <th class="text-center" scope="col">ASM GD2</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th class="text-center" scope="row">1</th>
+                            <td>Trần Văn A</td>
+                            <td>Ứng dụng phần mềm</td>
+                            <td class="text-center">Nam</td>
+                            <td class="text-end">10</td>
+                            <td class="text-end">10</td>
+                            <td class="d-flex justify-content-evenly">
+                                <button class="btn btn-primary">Chi tiết</button>
+                                <button class="btn btn-warning">Sửa</button>
+                                <a href="" class="btn btn-danger">Xóa</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th class="text-center" scope="row">1</th>
+                            <td>Nguyễn Văn B</td>
+                            <td>Phát triển phần mềm</td>
+                            <td class="text-center">Nam</td>
+                            <td class="text-end">10</td>
+                            <td class="text-end">10</td>
+                            <td class="d-flex justify-content-evenly">
+                                <button class="btn btn-primary">Chi tiết</button>
+                                <button class="btn btn-warning">Sửa</button>
+                                <a href="" class="btn btn-danger">Xóa</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th class="text-center" scope="row">1</th>
+                            <td>Nguyễn Thị C</td>
+                            <td>Ứng dụng WEB</td>
+                            <td class="text-center">Nữ</td>
+                            <td class="text-end">10</td>
+                            <td class="text-end">10</td>
+                            <td class="d-flex justify-content-evenly">
+                                <button class="btn btn-primary">Chi tiết</button>
+                                <button class="btn btn-warning">Sửa</button>
+                                <a href="" class="btn btn-danger">Xóa</a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    <li class="list-group-item list-group-item-action list-group-item-light fw-bold">Tổng số sinh viên: 3</li>
+                  </div>
+            </div>
+            <div class="tab-pane fade " id="themmoi" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                <p class="fs-3 fw-bold text-center">Thêm mới điểm sinh viên</p>
+                <div class="border border-primary d-flex justify-content-center container" style="width:600px">
+                    <form class="pt-5">
+                        <div class="mb-3">
+                            <label class="form-label">Họ và Tên</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Giới Tính</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Nam
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Nữ
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Khác
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label class="form-check-label">ASM GD1</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col">
+                                <label class="form-check-label">ASM GD2</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="form-check-label">Khoa</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Lựa chọn khoa</option>
+                                <option value="1">Ứng dụng phần mềm</option>
+                                <option value="2">Phát triển phần mềm</option>
+                                <option value="3">Ứng dụng WEB</option>
+                            </select>
+                        </div>
+                        <div class="pt-3 pb-5">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<div class="container">
+    <h1>Them moi Studens</h1>
+    <form name="frm" novalidate ng-submit="onAdd()">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" name="name" required ng-model="dataInput.name">
+          <span ng-show="(frm.name.$error.required && frm.name.$touched) || (frm.name.$error.required && frm.$submitted)" class="text-danger">
+            Ten khong duoc de trong
+          </span>
+        </div>
+
+        <div class="mb-3">
+            <label for="mark" class="form-label">Mark</label>
+            <input type="number" class="form-control" id="mark" name="mark" required ng-model="dataInput.mark" ng-min="0" ng-max="10">
+            <span ng-show="(frm.mark.$error.required && frm.mark.$touched) || (frm.mark.$error.required && frm.$submitted)" class="text-danger">
+              Diem khong duoc de trong
+            </span>
+            <span ng-show="(frm.mark.$error.min) || (frm.mark.$error.max)" class="text-danger">
+                Diem phai trong khoang tu 0-10
+            </span>
+          </div>
+
+          <div class="mb-3">
+            <label for="gender" class="form-label">Gender</label>
+            <div class="form-check" ng-repeat="gd in listGenders">
+                <input class="form-check-input" type="radio" name="gender" id="gender" value="{{gd.id}}" required ng-model="dataInput.gender">
+                <label class="form-check-label" for="{{gd.id}}">
+                  {{gd.text}}
+                </label>
+              </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="class" class="form-label">Class</label>
+            <select class="form-select" name="class" id="class" required ng-model="dataInput.class">
+              <option ng-repeat="cl in listClasses" value="{{cl.id}}">{{cl.name}}</option>
+            </select>
+          </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>

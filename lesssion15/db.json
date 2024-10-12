@@ -1,0 +1,26 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Laptop Tufgaming",
+      "quantity": 28,
+      "category": "degh"
+    },
+    {
+      "id": "2",
+      "name": "Chuột không dây Logictis",
+      "quantity": 65,
+      "category": "degh"
+    }
+  ],
+  "categories": [
+    {
+      "id": "abcf",
+      "nameCategory": "Laptop"
+    },
+    {
+      "id": "degh",
+      "nameCategory": "Chuôt & Bàn phím"
+    }
+  ]
+}

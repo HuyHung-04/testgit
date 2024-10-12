@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "id": "addd",
+      "name": "admin",
+      "code": "PH45678",
+      "year": 2001,
+      "gender": "women",
+      "home": "tn"
+    },
+    {
+      "id": "a062",
+      "name": "blastoise",
+      "code": "123456",
+      "year": 2000,
+      "gender": "men",
+      "home": "hn"
+    }
+  ]
+}

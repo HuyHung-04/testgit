@@ -1,0 +1,60 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "Kỹ năng lập trình",
+      "yearOfPublish": 2004,
+      "status": "kp",
+      "publisher": "aaad"
+    },
+    {
+      "id": "fbbb",
+      "title": "âsad",
+      "yearOfPublish": 2008,
+      "status": "kp",
+      "publisher": "aaae"
+    },
+    {
+      "id": "c663",
+      "title": "huy",
+      "yearOfPublish": 2002,
+      "status": "cp",
+      "publisher": "aaae"
+    }
+  ],
+  "status": [
+    {
+      "name": "Cấp phép",
+      "value": "cp",
+      "id": "9208"
+    },
+    {
+      "name": "Không cấp phép",
+      "value": "kp",
+      "id": "7ecf"
+    },
+    {
+      "name": "Chờ cấp phép",
+      "value": "ccp",
+      "id": "3c26"
+    }
+  ],
+  "publishers": [
+    {
+      "id": "aaab",
+      "name": "NXB Kim Đồng"
+    },
+    {
+      "id": "aaac",
+      "name": "NXB Giáo dục"
+    },
+    {
+      "id": "aaad",
+      "name": "NXB Tuổi trẻ"
+    },
+    {
+      "id": "aaae",
+      "name": "NXB Bách Khoa"
+    }
+  ]
+}

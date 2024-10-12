@@ -1,0 +1,53 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "Kỹ năng lập học",
+      "yearOfPublish": 2001,
+      "status": "cp",
+      "publisher": "aaad"
+    },
+    {
+      "id": "369e",
+      "status": "cp",
+      "publisher": "aaae",
+      "title": "dsdsd",
+      "yearOfPublish": 23232
+    }
+  ],
+  "status": [
+    {
+      "name": "Cấp phép",
+      "value": "cp",
+      "id": "5bff"
+    },
+    {
+      "name": "Không cấp phép",
+      "value": "kp",
+      "id": "2ea0"
+    },
+    {
+      "name": "Chờ cấp phép",
+      "value": "ccp",
+      "id": "bfe5"
+    }
+  ],
+  "publishers": [
+    {
+      "id": "aaab",
+      "name": "NXB Kim Đồng"
+    },
+    {
+      "id": "aaac",
+      "name": "NXB Giáo dục"
+    },
+    {
+      "id": "aaad",
+      "name": "NXB Tuổi trẻ"
+    },
+    {
+      "id": "aaae",
+      "name": "NXB Bách Khoa"
+    }
+  ]
+}
